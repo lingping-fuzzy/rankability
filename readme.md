@@ -1,4 +1,4 @@
-# Rankability
+# On the fuzzy entropy and the rankability of data
 
 This repository implements the methods introduced in our paper to quantify the confidence and stability of data orderings.
 
