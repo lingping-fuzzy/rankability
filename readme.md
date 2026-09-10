@@ -1,7 +1,36 @@
-## Rankability
+# Rankability
 
-# On the fuzzy entropy and the rankability of data
+This repository implements the methods introduced in our paper to quantify the confidence and stability of data orderings.
 
-Rankability fundamentally differs from ranking: while ranking generates a deterministic order that may shift based on feature importance, rankability quantifies the confidence or stability of that ordering. Assessing the quality of a ranking is difficult, and measuring rankability is even more challenging. Despite its importance in applications such as web search, data mining, cybersecurity, and machine learning, rankability remains largely underexplored. Only a handful of methods have been proposed since the first work by Anderson et al. in 2019, most of which rely on computationally intensive eigenvalue decompositions of large matrices or regression models trained on extensive datasets. This paper presents a novel rankability measure based on entropy and variance—two efficient, interpretable statistical quantities that overcome the computational limitations of existing approaches. Our method enables fast and practical rankability assessment in settings lacking ground truth or consensus standards. We evaluate the proposed measure on football tournament datasets and demonstrate its strong correlation with well-established ranking systems, including the widely used Elo rating. The results show close alignment with these conventional benchmarks, confirming the validity and practical relevance of our approach. As rankability is still an emerging field, this work contributes a computationally efficient and interpretable tool while highlighting the need for continued research to develop more robust analytical methods for evaluating ranking confidence in complex systems.
+## Paper Citation & Link
 
-# **Source Data**: [game and football data]([https://github.com/trcameron/specR](https://github.com/trcameron/specR))
+If you use this code or method, please cite our paper:
+> **On the fuzzy entropy and the rankability of data**  
+> *IEEE Open Journal of the Computer Society*, 2025.  
+> [Read the full paper on IEEE Xplore](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11288023)
+
+```bibtex
+@article{kong2025fuzzy,
+  title={On the fuzzy entropy and the rankability of data},
+  author={Kong, Lingping and Vel{\'a}squez, Juan D and Pant, Millie and Pan, Jeng-Shyang and Sn{\'a}{\v{s}}el, V{\'a}clav},
+  journal={IEEE Open Journal of the Computer Society},
+  year={2025},
+  publisher={IEEE}
+}
+```
+
+### Overview
+Rankability fundamentally differs from ranking: while ranking generates an order that shifts with feature importance, rankability measures the confidence or stability of that ordering. This paper addresses the computational limitations of existing methods by proposing a novel, fast, and interpretable rankability measure based on **entropy and variance**. We evaluate this measure on football tournament datasets, demonstrating a strong correlation with well-established ranking systems like the Elo rating, making it highly practical for environments lacking ground-truth consensus.
+
+---
+
+## Source Data
+
+The tournament and game datasets used in this project are publicly available. Please download them directly from the original repository:
+*   **Dataset Link:** [specR GitHub Repository (by trcameron)](https://github.com/trcameron/specR)
+
+---
+
+## License
+
+This project is licensed under the Creative Commons Attribution 4.0 International License - see the [LICENSE](LICENSE) file for details.
